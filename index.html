@@ -128,13 +128,13 @@
             November 17, 2019
         </p>
         <h3 class="post-title animated fadeInDown">
-            <a href="/2019/11/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客" class="posttitle">我的第一篇博客</a></h3>
+            <a href="/2019/11/17/p/" title="p" class="posttitle">p</a></h3>
         
         <p class="post-count animated fadeInDown">
             
             <span>
                 <b class="iconfont icon-text2"></b> <i>Words count</i>
-                179
+                0
             </span>
             
             
@@ -144,15 +144,19 @@
             </span>
             
             
+            <span id="/2019/11/17/p/" class="leancloud_visitors" data-flag-title="">
+                <b class="iconfont icon-read"></b> <i>Read count</i>
+                <i class="leancloud-visitors-count">1000000</i>
+            </span>
+            
         </p>
         
         
         <div class="md-content animated fadeIn">
             
-            <p>使用标题是需要用#号   </p>
-
             
-            <span class="read-more"><a href="/2019/11/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="Read article" class="posttitle">Read article</a>
+            
+            <span class="read-more"><a href="/2019/11/17/p/" title="Read article" class="posttitle">Read article</a>
                 <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
     </div>
@@ -186,6 +190,54 @@
             
             November 17, 2019
         </p>
+        <h3 class="post-title animated fadeInDown"><a href="/2019/11/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客" class="posttitle">我的第一篇博客</a></h3>
+        
+            <p class="post-count animated fadeInDown">
+                
+                    <span>
+                        <b class="iconfont icon-text2"></b> <i>Words count</i>
+                        179
+                    </span>
+                
+                
+                    <span>
+                        <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
+                        1 mins.
+                    </span>
+                
+                
+                    <span id="/2019/11/17/我的第一篇博客/" class="leancloud_visitors" data-flag-title="">
+                        <b class="iconfont icon-read"></b> <i>Read count</i>
+                        <i class="leancloud-visitors-count">1000000</i>
+                    </span>
+                
+            </p>
+            
+        
+        <div class="md-content animated fadeIn">
+            
+                <p>使用标题是需要用#号   </p>
+
+            
+            <span class="read-more"><a href="/2019/11/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="Read article" class="posttitle">Read article</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="post" id="post">
+    <div class="post-cover animated fadeIn" style="
+            background-image:
+            radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+            url(/img/welcome-cover.jpg);">
+    </div>
+    <div class="else">
+        <p class="animated fadeInDown">
+            
+                <a href="javascript:;" target="_blank" rel="noopener"><b>「 </b>Article<b> 」</b></a>
+            
+            November 17, 2019
+        </p>
         <h3 class="post-title animated fadeInDown"><a href="/2019/11/17/hello-world/" title="Hello World" class="posttitle">Hello World</a></h3>
         
             <p class="post-count animated fadeInDown">
@@ -201,6 +253,11 @@
                         2 mins.
                     </span>
                 
+                
+                    <span id="/2019/11/17/hello-world/" class="leancloud_visitors" data-flag-title="">
+                        <b class="iconfont icon-read"></b> <i>Read count</i>
+                        <i class="leancloud-visitors-count">1000000</i>
+                    </span>
                 
             </p>
             
@@ -301,9 +358,6 @@
 
 
 
-    <link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
-    <script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
-
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="/js/plugin.js"></script>
 <script src="/js/obsidian.js"></script>
@@ -332,15 +386,6 @@
     <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>
 
 
-
-    <script src="/js/busuanzi.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            if ($('span[id^="busuanzi_"]').length) {
-                initialBusuanzi();
-            }
-        });
-    </script>
 
 
 <link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
@@ -433,6 +478,38 @@
     }
 </script>
 
+
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    <script>
+
+        var valine = new Valine();
+
+        function initValine(path) {
+            if (!path) path = window.location.pathname;
+            let language = 'en';
+            if (!language) {
+                language = 'en';
+            } else {
+                language = language.toLowerCase();
+            }
+            valine.init({
+                el: '#vcomments',
+                appId: 'QHCOIEBlyjBUMAjaE5ilzafk-gzGzoHsz',
+                appKey: 'ggeGwz8ypB9uiAIYSRH5T0PF',
+                notify: 'false',
+                verify: 'false',
+                avatar: 'mp',
+                placeholder: 'Leave your throughs behind~',
+                visitor: 'true',
+                path: path,
+                lang: language
+            });
+        }
+
+        $(document).ready(function () {
+            initValine();
+        });
+    </script>
 
 
 
